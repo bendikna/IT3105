@@ -8,6 +8,8 @@ class Actor:
         self.eps = eps
         self.alpha = alpha
         self.gamma = gamma
+        self.policy = {}
+
         return
 
 # For linje 2 i algoritmen
