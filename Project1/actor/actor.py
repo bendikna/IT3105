@@ -15,7 +15,7 @@ class Actor:
 # For linje 2 i algoritmen
     def choose_action(self, env):
         rand_num = np.random.random()
-        possible_actions = env.possible_actions()
+        possible_actions = env.legal_actions()
         if rand_num < self.eps:
             action = random.choice(possible_actions)
         else:
